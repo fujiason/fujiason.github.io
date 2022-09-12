@@ -1,10 +1,10 @@
 import './style.css'
 
-import * as THREE from 'three';
-import {OrbitControls} from './OrbitControls.js';
-import {GLTFLoader} from './GLTFLoader.js';
+import * as THREE from '../node_modules/three';
+import {OrbitControls} from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
+import {GLTFLoader} from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
-/*THank you to https://youtu.be/91Q6RvKvd7o and https://youtu.be/Q7AOvWpIVHU*/
+/*Thank you to https://youtu.be/91Q6RvKvd7o and https://youtu.be/Q7AOvWpIVHU*/
 
 const width = window.innerWidth/2;
 const height = window.innerHeight/2
