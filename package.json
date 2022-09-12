@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepge": "https://github.com/fujiason/fujiason.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
