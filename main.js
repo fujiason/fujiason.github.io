@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 
-// THank you to https://youtu.be/91Q6RvKvd7o and https://youtu.be/Q7AOvWpIVHU
+/*THank you to https://youtu.be/91Q6RvKvd7o and https://youtu.be/Q7AOvWpIVHU*/
 
 const width = window.innerWidth/2;
 const height = window.innerHeight/2
