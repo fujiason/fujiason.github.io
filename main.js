@@ -1,8 +1,8 @@
 import './style.css'
 
-import * as THREE from './three';
-import {OrbitControls} from './three/examples/jsm/controls/OrbitControls.js';
-import {GLTFLoader} from './three/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.137.4/';
+import {OrbitControls} from 'https://cdn.jsdelivr.net/npm/three@0.137.4/examples/jsm/controls/OrbitControls.js';
+import {GLTFLoader} from 'https://cdn.jsdelivr.net/npm/three@0.137.4/examples/jsm/loaders/GLTFLoader.js';
 
 /*Thank you to https://youtu.be/91Q6RvKvd7o and https://youtu.be/Q7AOvWpIVHU*/
 
