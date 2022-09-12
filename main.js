@@ -1,5 +1,3 @@
-import './style.css'
-
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.137.4/';
 import {OrbitControls} from 'https://cdn.jsdelivr.net/npm/three@0.137.4/examples/jsm/controls/OrbitControls.js';
 import {GLTFLoader} from 'https://cdn.jsdelivr.net/npm/three@0.137.4/examples/jsm/loaders/GLTFLoader.js';
