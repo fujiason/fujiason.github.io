@@ -20,7 +20,6 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(width, height);
 renderer.setClearColor(0xFFFFFF, 0);
-// camera.position.setX(2.5);
 camera.position.setX(1.5);
 camera.position.setY(0.7);
 camera.position.setZ(2.5);
@@ -32,12 +31,6 @@ const pointLight1 = new THREE.PointLight(0xFFFFC0);
 pointLight1.position.set(1.2, 1.6, 0.2);
 const pointLight2 = new THREE.PointLight(0xFFFFC0);
 pointLight2.position.set(-1, 0, -2);
-
-// const lightHelper = new THREE.PointLightHelper(pointLight);
-// scene.add(lightHelper);
-// const lightHelper1 = new THREE.PointLightHelper(pointLight1);
-// scene.add(lightHelper1);
-// const ambientLight = new THREE.AmbientLight(0xffffff);
 
 scene.add(pointLight, pointLight1, pointLight2);
 
