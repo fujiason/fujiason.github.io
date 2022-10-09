@@ -29,24 +29,30 @@
     </div>
     <center>
       <div class="filmRow">
+
         <div class="filmImages">
-          <a href="heights.html"><img src="./photos/InTheHeights.jpeg"></a>
+          <input id="myBtn" type="image" src="./photos/InTheHeights.jpeg"></input>
           <div class="filmName">
             <h3>In The Heights But It's Asian</h3>
           </div>
         </div>
-      <div class="filmImages">
-        <a href="wuxing.html"><img src="./photos/Wuxing.png"></a>
-          <div class="filmName">
-            <h3>Wuxing Warriors</h3>
-          </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
         </div>
+      </div>
+
         <div class="filmImages">
-          <a href="wuxing.html"><img src="./photos/Wuxing.png"></a>
+          <input id="myBtn" type="image" src="./photos/Wuxing.PNG"></input>
           <div class="filmName">
             <h3>Wuxing Warriors</h3>
           </div>
         </div>
+
+
       </div>
     </center>
     <div class="content">
@@ -56,29 +62,49 @@
       </div>
     </div>
       <div class="filmRow">
+
+
         <div class="filmImages">
-          <a href="fashion.html"><img src="./photos/FashionShow.png"></a>
+          <input id="myBtn" type="image" src="./photos/FashionShow.PNG"></input>
           <div class="filmName">
             <h3>Fashion Show 2023</h3>
           </div>
         </div>
-        <div class="filmImages">
-          <a href="fashion.html"><img src="./photos/FashionShow.png"></a>
-          <div class="filmName">
-            <h3>Fashion Show 2023</h3>
-          </div>
-        </div>
-        <div class="filmImages">
-          <a href="fashion.html"><img src="./photos/FashionShow.png"></a>
-          <div class="filmName">
-            <h3>Fashion Show 2023</h3>
-          </div>
-        </div>
+
+
+
       </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
-    <scripe src="main.js"></scripe>
+    <script src="main.js"></script>
+    <script>
+      // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
 </body>
 </html>
