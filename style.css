@@ -1,199 +1,404 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt:200,300,400,500,600,700,800,900&display=swap');
 
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
 }
-section{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #202023;
+body{
+    -webkit-animation: fadein 3s;
+    background-color: black;
+    margin: 0;
 }
-header{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+html{
+    scroll-behavior: smooth;
 }
-header .title{
-  position: relative;
-  max-width: 80px;
-  display: inline-block;
-  color: palegreen;
-  text-decoration: none;
+@-webkit-keyframes fadein{
+    from{opacity: 0;}
+    to{opacity:1;}
 }
-header ul{
-  position: relative;
-  display: flex;
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .work_transition, .about_transition{
+    height: 100vh;
 }
-header ul li{
-  list-style: none;
+.div1{
+    justify-content: center;
+    overflow: hidden;
 }
-header ul li a{
-  display: inline-block;
-  color: palegreen;
-  font-weight: 400;
-  margin-left: 40px;
-  text-decoration: none;
+.div1 video{
+    position: relative;
+    z-index: 0;
+    max-height: 100vh;
 }
-section div div p a{
-  display: inline-block;
-  color: white;
-  font-weight: 400;
-  text-decoration: none;
+.skills{
+    top: 0%;
+    margin-top: 125px;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.skill_content h1{
+    color: white;
+    font-weight: 400;
+    font-size: 6rem;
+    text-decoration: none;
+}
+.work_transition, .about_transition{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.work_transition video, .about_transition video{
+    margin: auto;
+    display: block;
+    position: relative;
+    z-index: 0;
+    max-height: 50vh;
+}
+.work_transition h1, .about_transition h1{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    font-size: 10em;
+    font-weight: 500;
+    color: white;
+}
+.div3, .div4, .div5, .div8{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: left;
+}
+.div3 div h1{
+    color: white;
+    
+}
+.film_title{
+    margin-top: 70px;
+}
+.div3 div p{
+    color: #CCCCCC;
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 40em;
+    margin-top: 10px;
+}
+.div3 div video{
+    transform: translateX(-50%);
+    z-index: 0;
+    max-height: 65vh;
+    margin-top: 40px;
+    position: absolute;
+}
+.div4 div h1{
+    color: white;
+}
+.div4 div p{
+    font-size: 1.5rem;
+    color: #CCCCCC;
+    font-weight: 500;
+    max-width: 40em;
+    margin-top: 10px;
+}
+.div4 div video{
+    transform: translateX(-50%);
+    z-index: 0;
+    max-height: 65vh;
+    margin-top: 40px;
+    position: absolute;
+}
+.div5 div h1{
+    color: white;
+}
+.div5 div p{
+    font-size: 1.5rem;
+    color: #CCCCCC;
+    font-weight: 500;
+    max-width: 40em;
+    margin-top: 10px;
+}
+.div5 div video{
+    transform: translateX(-50%);
+    z-index: 0;
+    max-height: 89vh;
+    margin-top: 40px;
+    position: absolute;
+}
+.div6, .div7{
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.div6 div, .div7 div, .contact div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.div9{
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    display: grid;
+}
+.div9 div h1{
+    padding-bottom: 60px;
+    font-size: 4rem;
+    font-weight: 500;
+    max-width: 30em;
+    color: #CCCCCC;
+}
+.div6 div img, .div7 div img{
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+}
+.contact div img{
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+}
+.div6 div p, .div7 div p, .contact div p{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-weight: 500;
+    max-width: 30em;
+    color: #CCCCCC;
+}
+.socials{
+    display: flex;
+}
+.socials a img{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    align-items: center;
+    filter: invert(1);
+    max-height: 90px;
+    width: auto;
+}
+.socials a img:hover{
+    transition: 0.3s;
+    transform: scale(1.3);
+}
+.title{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.title h1{
+    font-size: 10em;
+    font-weight: 500;
+    color: white;
+}
+.title h2{
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+}
+.sticky{
+    opacity: 90%;
+    z-index: 2;
+    position: fixed;
+    background-color: #111111;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    position: relative;
+    max-width: 50px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.name h2{
+    color: white;
+}
+.sticky ul{
+    position: relative;
+    display: flex;
+}
+.sticky ul li{
+    list-style: none;
+}
+.sticky ul li a{
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.sticky ul li a:hover{
+    transition: 0.3s;
+    transform: scale(1.3);
 }
 .home{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
 }
-.home div a h1{
-  width: 45px;
-  height: auto;
-}
-.home div img{
-  margin-right: 15px;
-  width: 45px;
-  height: auto;
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .content{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  font-weight: 400;
-  text-decoration: none;
-}
-.content .textBox{
+    background-color: black;
+    position: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+  }
+.contentText{
   position: relative;
   max-width: 600px;
 }
-.content .textBox h2{
+.contentText h2{
+  max-width: 600px;
   font-size: 3em;
   line-height: 1.4em;
   font-weight: 500;
 }
-.content .textBox h3{
-  color: palegreen;
-}
-.imgBox p{
-  justify-content: center;
-  display: flex;
-  color: gray;
-}
-.content .textBox p a{
-  display: inline-block;
-  margin-top: 20px;
-  padding: 8px 20px;
-  background: palegreen;
-  color: #202023;
-  border-radius: 10px;
+.contentText h3{
+    max-width: 600px;
+  color: #CCCCCC;
   font-weight: 500;
-  letter-spacing: 1px;
-  text-decoration: none;
+  max-width: 40em;
+  margin-top: 10px;
+}
+.filmRow{
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    justify-content: center;
+    background-color: black;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.filmImages{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    margin: 20px 0px;
+    color: white;
+}
+.filmName{
+    position: absolute;
+    bottom: 8px;
+    left: 0px;
+    display: inline-block;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    opacity: 0;
+}
+.filmImages a img{
+    max-width: 400px;
+}
+.filmImages:hover .filmName{
+  opacity: 1;
   transition: 0.3s;
 }
-.content .textBox p a:hover{
-  transform: scale(1.2);
+.contentText iframe{
+  margin: 20px 0px;
 }
-.thumb{
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
-  display: flex;
-  color: palegreen;
-  justify-content: center;
-}
-.thumb li{
-  list-style: none;
-  display: inline-block;
-  margin: 0 50px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.thumb li:hover{
-  transform: translateY(-15px )
-}
-.thumb li img{
-  max-width: 100px;
-}
-.socials{
-  position: absolute;
-  top: 30%;
-  right: 30px;
-  transform: translateY(-50);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.socials{
-  padding: 5px 5px;
-  background: palegreen;
-  color: #202023;
-  border-radius: 10px;
-  text-decoration: none;
-}
-.socials li{
-  list-style: none;
-  transition: 0.3s;
-  display: inline-block;
 
+.div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 20%;
 }
-.socials li:hover{
-  transform: scale(1.3);
+#video-compare-container {
+    margin-top: 70px;
+    align-items: center;
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+    width: 89%;
+    height: 89%;
+    padding-top: 42.3%;
+    z-index: 0;
 }
-.socials li a{
-  display: inline-block;
-  margin: 5px 0;
-  transform: scale(0.6);
+#video-compare-container > img {
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    height: 100%;
 }
-.socials li a img{
-  width: 60px;
-  height: auto;
+#video-clipper {
+    width: 50%; 
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    overflow: hidden;
 }
-.contactContent{
-  position: relative;
-  width: 100%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  font-weight: 400;
-  text-decoration: none;
+#video-clipper img {
+    width: 200%;
+    position: absolute;
+    height: 100%;
 }
-.contactImg img{
-  width: 600px;
-  height: auto;
-}
-.contactTextBox{
-  position: relative;
-  max-width: 600px;
-}
-.contactTextBox h2{
-  font-size: 3em;
-  line-height: 1.4em;
-  font-weight: 500;
-}
-.contactTextBox h3{
-  color: palegreen;
+#v0 {
+    position: flex;
+    bottom: 0;
+    right: 0;
+    margin-top: 100px;
+    width: 89%;
 }

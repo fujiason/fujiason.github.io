@@ -1,55 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="shortcut icon" type="image/x-icon" href="icon.png"/>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <link rel="stylesheet" href="style.css" />
-    <title>Fujifolio</title>
-  </head>
-  <body>
-    <section>
-        <header>
-          <div class="home">
-            <div>
-              <a href="index.html" class="title"><img src="./icon.png" class="logo"></a>
-            </div>
-            <div>
-              <a href="index.html" class="title"><h1>FujiCider</h1></a>
-            </div>
-          </div>
-            <ul>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="posts.html">Posts</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://github.com/fujiason/fujiason.github.io.git">Source</a></li>
-            </ul>
-        </header>
-        <div class="content">
-          <div class="textBox">
-            <h2>Welcome to my Orchard!</h2>
-            <h3><br>About FujiCider</h3>
-            <p>
-              Fujicider is a full stack software engineer with a passion for animation/graphics. 
-              He is a second-generation Chinese American who wants to apply his skills to help solve
-              real life problems and wants to create tools that are intuitive and easy to use for everyone.</br>
-              <a href="works.html">Learn More</a>
-            </p>
-          </div>
-          <div class="imgBox">
-            <canvas id="bg" class="background"></canvas>
-            <p>Rotate, zoom, or grab me!</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Danielfolio</title>
+</head>
+<body>
+    <div class="sticky">
+        <div class="home">
+          <div>
+            <a href="index.html" class="name"><h2>Daniel Zhang</h2></a>
           </div>
         </div>
-        <ul class="socials">
-          <li><a href="https://twitter.com/FujiCider"><img src="./photographs/twitter.png"></a></li>
-          <li><a href="https://www.youtube.com/channel/UCYmo_rdXdHhiXhdzqLpEpWA"><img src="./photographs/youtube.png"></a></li>
-          <li><a href="https://www.instagram.com/fujicider/"><img src="./photographs/instagram.png"></a></li>
-          <li><a href="https://www.tiktok.com/@fujicider"><img src="./photographs/tiktok.png"></a></li>
-          <li><a href="https://www.twitch.tv/fujicider"><img src="./photographs/twitch.png"></a></li>
+          <ul>
+            <li><a href="film.html">Film</a></li>
+            <li><a href="#div9">Contact</a></li>
+            <li><a href="#">Source</a></li>
         </ul>
-    </section>
-    <script type="module" src="/main.js"></script>
-  </body>
+    </div>
+    <div class="div1">
+        <video autoplay muted loop>
+            <source src="./movies/Daniel Teaser Clip 12 Rainbow Lights.mp4" type="video/mp4">
+        </video>
+        <div class="title">
+            <h1>Daniel Zhang</h1>
+            <h2>Director and Artist</h2>
+        </div>
+        <div class="skills">
+            <div class="skill_content"><h1>Director</h1></div>
+            <div class="skill_content"><h1>Editor</h1></div>
+            <div class="skill_content"><h1>Photography</h1></div>
+            <div class="skill_content"><h1>Computer Science</h1></div>
+        </div>
+    </div>
+    
+    <div class="work_transition">
+        <video autoplay muted loop>
+            <source src="./movies/Daniel Teaser Clip 14 Cultural Coords.mp4" type="video/mp4">
+        </video>
+        <h1>Films</h1>
+    </div>
+    <!-- <div class="div2">
+        <video id="v0" tabindex="0", autobuffer preload muted class="scrub_mov">
+            <source src="./movies/Daniel Teaser Clip 18 Clash.mp4" type="video/mp4">
+        </video>
+    </div> -->
+
+    <div class="div3">
+        <div>
+            <H1 class="film_title">
+                In The Heights But It's Asian
+            </H1>
+            <p>
+                “In the Heights… but it's Asian. Instead of a bodega, it's a boba shop. And it's the WHOLE opening number in a shot x shot remake… and I can't tear my eyes away.” -John M. Chu
+            </p>
+            <h1>
+                <br>Role:
+            </h1>
+            <p>
+                Director, Actor, Cinematographer, Editor
+            </p>
+            <center>
+                <video autoplay muted loop>
+                    <source src="./movies/Daniel Teaser Clip 1 In The Heights Opening.mp4" type="video/mp4">
+                </video>
+            </center>
+        </div>
+    </div>
+    <div class="div4">
+        <div>
+            <H1 class="film_title">
+                Wuxing Warriors
+            </H1>
+            <p>
+                A martial arts action fantasy piece rooted in Daoist philosophy, Wuxing Warriors features a battle between five elemental warriors.
+            </p>
+            <h1>
+                <br>Role:
+            </h1>
+            <p>
+                Director, Writer, Cinematographer, Editor, VFX Artist
+            </p>
+            <center>
+                <video autoplay muted loop>
+                    <source src="./movies/Daniel Teaser Clip 13 Qi Waterbending.mp4" type="video/mp4">
+                </video>
+            </center>
+        </div>        
+    </div>
+    <div class="div8">
+        <div id="video-compare-container">
+            <img src="./vfx/Edward Firebending VFX 1 Before.jpg">
+            <div id="video-clipper">
+                <img src="./vfx/Edward Firebending VFX 1 After.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div style="
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: center;">
+        <p style="color: #CCCCCC">
+            Before and After (Hover)
+        </p>
+    </div>
+
+    <div class="div5">
+        <div>
+            <H1 class="film_title">
+                Sokka The Firebender
+            </H1>
+            <p>
+                The Southern Water Tribe meat-loving, boomerang-wielding inventor swordsman acquires one final skill to level the playing field: firebending.
+            </p>
+            <h1>
+                <br>Role:
+            </h1>
+            <p>
+                Director, Writer, Cinematographer, Editor, VFX Artist
+            </p>
+            <center>
+                <video autoplay muted loop>
+                    <source src="./movies/Daniel Teaser Clip 19 Sokka Dual Fire Blast.mp4" type="video/mp4">
+                </video>
+            </center>
+        </div>        
+    </div>
+
+    <div class="about_transition">
+        <video autoplay muted loop>
+            <source src="./movies/Daniel Teaser Clip 2 12 AM Phone Shot.mp4" type="video/mp4">
+        </video>
+        <h1>About</h1>
+    </div>
+
+    <div class="div6">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div>
+                <img src="./photos/STFB BTS.PNG">
+            </div>
+        </div>
+    <div class="div7">
+            <div>
+                <img src="./photos/FS Trailer BTS.JPG">
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+    </div>
+
+    <div class="div9" id="div9">
+        <div>
+            <h1>
+                Contact
+            </h1>
+        </div>
+        <div class="contact">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/zhang_films/"><img src="./photos/instagram.png"></a>
+                    <a href="https://www.youtube.com/c/DanielZhangyeet"><img src="./photos/youtube.png"></a>
+                    <a href="https://www.tiktok.com/@sokkathefirebender"><img src="./photos/tiktok.png"></a>
+                </div>
+            </div>
+            <div>
+                <img src="./photos/daniel_2.JPG">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <scripe src="main.js"></scripe>
+    <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // gsap.to(".div1", {
+    //     duration: 8, 
+    //     scrollTrigger: {
+    //         trigger: ".div1", 
+    //         start: "top top", 
+    //         end: "-=1000", 
+    //         scrub: 4, 
+    //         pin: ".div2",
+    //         toggleActions: "restart none none none", 
+    //         markers: {
+    //             startColor: "purple", 
+    //             endColor: "fuchsia", 
+    //             fontSize: "2rem",
+    //         },
+    //     } 
+    // });
+
+    gsap.defaults({ease: "none", duration: 2});
+    
+    const tl = gsap.timeline();
+    tl.to(".title", {opacity: 0})
+    tl.from(".skills", {opacity:0, yPercent: 100})
+    tl.to(".skills", {opacity:0, yPercent: -50});
+
+    ScrollTrigger.create({
+        animation: tl, 
+        trigger: ".div1", 
+        start: ".div1", 
+        end: "+=2500", 
+        scrub: true, 
+        pin: true, 
+        anticipatePin: 1, 
+        // markers: {
+        //     startColor: "purple", 
+        //     endColor: "fuchsia", 
+        //     fontSize: "2rem",
+        // }
+    });
+
+    const sl = gsap.timeline();
+    sl.to(".work_transition video", {scale: 2})
+    sl.from(".work_transition h1", {opacity:0});
+
+    ScrollTrigger.create({
+        animation: sl, 
+        trigger: ".work_transition", 
+        start: ".work_transition", 
+        end: "+=1000", 
+        scrub: true, 
+        pin: true, 
+        anticipatePin: 1, 
+        // markers: {
+        //     startColor: "purple", 
+        //     endColor: "fuchsia", 
+        //     fontSize: "2rem",
+        // }
+    });
+
+    const vl = gsap.timeline();
+    vl.to(".about_transition video", {scale: 2})
+    vl.from(".about_transition h1", {opacity:0});
+
+    ScrollTrigger.create({
+        animation: vl, 
+        trigger: ".about_transition", 
+        start: ".about_transition", 
+        end: "+=1000", 
+        scrub: true, 
+        pin: true, 
+        anticipatePin: 1, 
+        // markers: {
+        //     startColor: "purple", 
+        //     endColor: "fuchsia", 
+        //     fontSize: "2rem",
+        // }
+    });
+
+    function trackLocation(e) {
+        var rect = videoContainer.getBoundingClientRect(),
+            position = ((e.pageX - rect.left) / videoContainer.offsetWidth)*100;
+        if (position <= 100) { 
+            videoClipper.style.width = position+"%";
+            clippedVideo.style.width = ((100/position)*100)+"%";
+            clippedVideo.style.zIndex = 3;
+	    }
+    }
+    var videoContainer = document.getElementById("video-compare-container"),
+    videoClipper = document.getElementById("video-clipper"),
+    clippedVideo = videoClipper.getElementsByTagName("img")[0];
+    videoContainer.addEventListener( "mousemove", trackLocation, false); 
+    videoContainer.addEventListener("touchstart",trackLocation,false);
+    videoContainer.addEventListener("touchmove",trackLocation,false);
+
+    </script>
+</body>
 </html>
