@@ -100,7 +100,7 @@ html{
 .div3 div video{
     transform: translateX(-50%);
     z-index: 0;
-    max-height: 65vh;
+    max-height: 51vh;
     margin-top: 40px;
     position: absolute;
     text-align: center;
@@ -120,7 +120,7 @@ html{
 .div4 div video{
     transform: translateX(-50%);
     z-index: 0;
-    max-height: 65vh;
+    max-height: 51vh;
     margin-top: 40px;
     position: absolute;
     text-align: center;
@@ -140,7 +140,7 @@ html{
 .div5 div video{
     transform: translateX(-50%);
     z-index: 0;
-    max-height: 89vh;
+    max-height: 69vh;
     margin-top: 40px;
     position: absolute;
     text-align: center;
