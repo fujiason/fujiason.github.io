@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Danielfolio</title>
+    <title>Dazhangniel - Films</title>
 </head>
 <body>
     <div class="sticky">
@@ -16,7 +16,7 @@
         </div>
           <ul>
             <li><a href="film.html">Film</a></li>
-            <li><a href="#div9">Contact</a></li>
+            <li><a href="index.html#div9">Contact</a></li>
             <li><a href="https://github.com/fujiason/fujiason.github.io">Source</a></li>
         </ul>
     </div>
@@ -31,27 +31,52 @@
       <div class="filmRow">
 
         <div class="filmImages">
-          <input id="myBtn" type="image" src="./photos/InTheHeights.jpeg"></input>
+          <input id="myBtn1" type="image" src="./photos/InTheHeights.jpeg"></input>
           <div class="filmName">
             <h3>In The Heights But It's Asian</h3>
           </div>
         </div>
 
       <!-- The Modal -->
-      <div id="myModal" class="modal">
+      <div id="myModal1" class="modal">
         <div class="modal-content">
-        <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
+        <span class="close1">&times;</span>
+
+          <h2>In The Heights</h2>
+          <div class="modal_inline">
+            <div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/h1mL9ec5IVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+              <h3><br>“In the Heights… but it's Asian. Instead of a bodega, it's a boba shop. And it's the WHOLE opening number in a shot x shot remake… and I can't tear my eyes away.” -John M. Chu
+              </h3>
+            </div>
+          </div>
+
         </div>
       </div>
-
+      
         <div class="filmImages">
-          <input id="myBtn" type="image" src="./photos/Wuxing.PNG"></input>
+          <input id="myBtn2" type="image" src="./photos/Wuxing.PNG"></input>
           <div class="filmName">
             <h3>Wuxing Warriors</h3>
           </div>
         </div>
 
+        <div id="myModal2" class="modal">
+          <div class="modal-content">
+          <span class="close2">&times;</span>
+  
+            <h2>Wuxing Warriors</h2>
+            <div class="modal_inline">
+              <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zcSM09kfgAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div>
+                <h3><br>A martial arts action fantasy piece rooted in Daoist philosophy, Wuxing Warriors features a battle between five elemental warriors.
+                </h3>
+              </div>
+            </div>
 
       </div>
     </center>
@@ -63,15 +88,32 @@
     </div>
       <div class="filmRow">
 
-
+        
         <div class="filmImages">
-          <input id="myBtn" type="image" src="./photos/FashionShow.PNG"></input>
+          <input id="myBtn3" type="image" src="./photos/FashionShow.PNG"></input>
           <div class="filmName">
             <h3>Fashion Show 2023</h3>
           </div>
         </div>
 
-
+        <div id="myModal3" class="modal">
+          <div class="modal-content">
+          <span class="close3">&times;</span>
+  
+            <h2>Fashion Show 2023</h2>
+            <div class="modal_inline">
+              <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T9Ox-xG_hP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div>
+                <h3><br>This short film first premiered as part of the UIUC AAA 36th Annual Fashion Show, 
+                  a dance showcase of Asian American culture and talent. The film was played alongside live performances, 
+                  hence why the film is split into parts. Together, the film and the performances tell a cohesive story. 
+                  I highly recommend watching Wuxing Warriors along with the dances to get the full experience! 
+                  You can find the full cut of Fashion Show on the official AAA YouTube channel: https://youtu.be/JaKZmpLrpaQ
+                </h3>
+              </div>
+            </div>
 
       </div>
       </div>
@@ -81,30 +123,45 @@
     <script src="main.js"></script>
     <script>
       // Get the modal
-var modal = document.getElementById("myModal");
+var modal1 = document.getElementById("myModal1");
+var modal2 = document.getElementById("myModal2");
+var modal3 = document.getElementById("myModal3");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close1")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+btn1.onclick = function() {
+    modal1.style.display = "block";
 }
+
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+span3.onclick = function() {
+  modal3.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
     </script>
 </body>
 </html>
