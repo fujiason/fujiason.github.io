@@ -35,6 +35,8 @@
             <div class="skill_content"><h1>Computer Science</h1></div>
         </div>
     </div>
+    <div class="transition_mask_skills" style="background: linear-gradient(0deg, black, black 15%, transparent); height: 30vh;"></div>
+    
     
     <div class="work_transition">
         <video autoplay muted loop>
@@ -42,6 +44,7 @@
         </video>
         <h1>Films</h1>
     </div>
+    <div class="transition_mask_work" style="background: linear-gradient(0deg, black, black 15%, transparent); height: 30vh;"></div>
     <!-- <div class="div2">
         <video id="v0" tabindex="0", autobuffer preload muted class="scrub_mov">
             <source src="./movies/Daniel Teaser Clip 18 Clash.mp4" type="video/mp4">
@@ -135,7 +138,8 @@
         </video>
         <h1>About</h1>
     </div>
-
+    <div class="transition_mask_about" style="background: linear-gradient(0deg, black, black 15%, transparent); height: 30vh;"></div>
+    
     <div class="div6">
             <div>
                 <p>
@@ -208,7 +212,8 @@
     const tl = gsap.timeline();
     tl.to(".title", {opacity: 0})
     tl.from(".skills", {opacity:0, yPercent: 100})
-    tl.to(".skills", {opacity:0, yPercent: -50});
+    tl.to(".skills", {opacity:0, yPercent: -100})
+    tl.to(".transition_mask_skills", {yPercent:-100});
 
     ScrollTrigger.create({
         animation: tl, 
@@ -227,7 +232,8 @@
 
     const sl = gsap.timeline();
     sl.to(".work_transition video", {scale: 2})
-    sl.from(".work_transition h1", {opacity:0});
+    sl.from(".work_transition h1", {opacity:0})
+    sl.to(".transition_mask_work", {yPercent:-100});
 
     ScrollTrigger.create({
         animation: sl, 
@@ -246,7 +252,8 @@
 
     const vl = gsap.timeline();
     vl.to(".about_transition video", {scale: 2})
-    vl.from(".about_transition h1", {opacity:0});
+    vl.from(".about_transition h1", {opacity:0})
+    vl.to(".transition_mask_about", {yPercent:-100});
 
     ScrollTrigger.create({
         animation: vl, 
