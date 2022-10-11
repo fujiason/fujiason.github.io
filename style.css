@@ -26,9 +26,13 @@ html{
     overflow: hidden;
 }
 .div1 video{
-    position: relative;
+    /* position: relative; */
     z-index: 0;
     max-height: 100vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .skills{
     top: 0%;
@@ -98,6 +102,9 @@ html{
     max-height: 65vh;
     margin-top: 40px;
     position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .div4 div h1{
     color: white;
@@ -115,6 +122,9 @@ html{
     max-height: 65vh;
     margin-top: 40px;
     position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .div5 div h1{
     color: white;
@@ -132,6 +142,9 @@ html{
     max-height: 89vh;
     margin-top: 40px;
     position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .div6, .div7{
     overflow: hidden;
