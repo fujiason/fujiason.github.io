@@ -47,7 +47,7 @@ html{
     font-weight: 400;
     font-size: 4.6rem;
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 .work_transition, .about_transition{
     display: flex;

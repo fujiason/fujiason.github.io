@@ -36,7 +36,7 @@
             <div class="skill_content"><h1>VFX Artist</h1></div>
         </div>
     </div>
-    <div class="transition_mask_skills" style="background: linear-gradient(0deg, black, black 15%, transparent); height: 30vh;"></div>
+    <div class="transition_mask_skills" style="background: linear-gradient(0deg, black, black 15%, transparent); height: 15vh;"></div>
     
     
     <div class="work_transition">
@@ -214,8 +214,8 @@
     const tl = gsap.timeline();
     tl.to(".title", {opacity: 0})
     tl.from(".skills", {opacity:0, yPercent: 100})
-    tl.to(".skills", {opacity:0, yPercent: -100})
-    tl.to(".transition_mask_skills", {yPercent:-100});
+    tl.to(".skills", {yPercent: -10, duration: 0.2})
+    tl.to(".transition_mask_skills", {yPercent:-100, duration: 0.2});
 
     ScrollTrigger.create({
         animation: tl, 
