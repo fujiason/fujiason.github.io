@@ -18,7 +18,7 @@ html{
     from{opacity: 0;}
     to{opacity:1;}
 }
-.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .work_transition, .about_transition{
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .work_transition, .about_transition, .link_transition{
     height: 100vh;
 }
 .div1{
@@ -49,19 +49,19 @@ html{
     text-decoration: none;
     margin-top: 25px;
 }
-.work_transition, .about_transition{
+.work_transition, .about_transition, .link_transition{
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
-.work_transition video, .about_transition video{
+.work_transition video, .about_transition video, .link_transition video{
     margin: auto;
     display: block;
     position: relative;
     z-index: 0;
     max-height: 50vh;
 }
-.work_transition h1, .about_transition h1{
+.work_transition h1, .about_transition h1, .link_transition h1{
     position: absolute;
     top: 30%;
     left: 0;

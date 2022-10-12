@@ -138,7 +138,7 @@
         <video autoplay muted loop>
             <source src="./movies/Daniel Teaser Clip 18 Clash.mp4" type="video/mp4">
         </video>
-        <h1>About</h1>
+        <h1>Leadership</h1>
     </div>
     <div class="transition_mask_about" style="background: linear-gradient(0deg, black, black 15%, transparent); height: 30vh;"></div>
     
@@ -162,6 +162,14 @@
                 </p>
             </div>
     </div>
+
+    <div class="link_transition">
+        <video autoplay muted loop>
+            <source src="./movies/Daniel Teaser Clip 20 Cloth.mp4" type="video/mp4">
+        </video>
+        <h1>Links</h1>
+    </div>
+    <div class="transition_mask_link" style="background: linear-gradient(0deg, black, black 15%, transparent); height: 30vh;"></div>
 
     <div class="div9" id="div9">
         <div>
@@ -215,7 +223,7 @@
     tl.to(".title", {opacity: 0})
     tl.from(".skills", {opacity:0, yPercent: 100})
     tl.to(".skills", {yPercent: -10, duration: 0.2})
-    tl.to(".transition_mask_skills", {yPercent:-100, duration: 0.2});
+    tl.to(".transition_mask_skills", {yPercent:-90, duration: 0.2});
 
     ScrollTrigger.create({
         animation: tl, 
@@ -235,7 +243,7 @@
     const sl = gsap.timeline();
     sl.to(".work_transition video", {scale: 2})
     sl.from(".work_transition h1", {opacity:0})
-    sl.to(".transition_mask_work", {yPercent:-100});
+    sl.to(".transition_mask_work", {yPercent:-90});
 
     ScrollTrigger.create({
         animation: sl, 
@@ -255,12 +263,32 @@
     const vl = gsap.timeline();
     vl.to(".about_transition video", {scale: 2})
     vl.from(".about_transition h1", {opacity:0})
-    vl.to(".transition_mask_about", {yPercent:-100});
+    vl.to(".transition_mask_about", {yPercent:-90});
 
     ScrollTrigger.create({
         animation: vl, 
         trigger: ".about_transition", 
         start: ".about_transition", 
+        end: "+=1000", 
+        scrub: true, 
+        pin: true, 
+        anticipatePin: 1, 
+        // markers: {
+        //     startColor: "purple", 
+        //     endColor: "fuchsia", 
+        //     fontSize: "2rem",
+        // }
+    });
+
+    const rl = gsap.timeline();
+    rl.to(".link_transition video", {scale: 2})
+    rl.from(".link_transition h1", {opacity:0})
+    rl.to(".transition_mask_link", {yPercent:-90});
+
+    ScrollTrigger.create({
+        animation: rl, 
+        trigger: ".link_transition", 
+        start: ".link_transition", 
         end: "+=1000", 
         scrub: true, 
         pin: true, 
