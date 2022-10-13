@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt:200,300,400,500,600,700,800,900&display=swap');
-/* film description align, scrub mov, link to video reel under description, more content for each of the films on index.html, VFX warping problem and size*/
+/* film description align with mov, scrub mov, more content for each of the films on index.html, VFX warping problem and size*/
 *{
     margin: 0;
     padding: 0;
@@ -275,15 +275,17 @@ html{
     font-weight: 400;
 }
 .reels h2 a{
-    padding: 5px 25px;
-    background: white;
-    color: black;
-    border-radius: 25px;
+    padding: 5px 15px;
+    border: 3px solid white;
+    border-radius: 15px;
+    color: white;
     text-decoration: none;
+    opacity: 0.5;
 }
-.reels:hover{
+.reels h2 a:hover{
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 1;
     transition: 0.4s;
-    transform: scale(1.1);
 }
 .sticky ul li a:hover{
     transition: 0.3s;
