@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt:200,300,400,500,600,700,800,900&display=swap');
-/* loading in screen no skills, film description align, scrub mov, div 1 video black bars, link to video under description, overlay film.html, more content for each of the films on index.html*/
+/* loading in screen no skills, film description align, scrub mov, link to video reel under description, more content for each of the films on index.html*/
 *{
     margin: 0;
     padding: 0;
@@ -447,14 +447,12 @@ html{
     flex-direction: row;
 }
 .modal_inline div{
-    padding-top: 100px;
     display: inline-block;
     vertical-align: middle;
-    width: 560px;
     height: auto;
 }
 .modal-content h2{
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     font-size: 3em;
     font-weight: 500;
     color: white;
@@ -462,14 +460,15 @@ html{
   }
 .modal_inline div h3{
     padding-left: 40px;
-    font-size: 1em;
+    font-size: 1.4em;
+    width: 560px;
     font-weight: 300;
     color: #CCCCCC;
     text-align: left;
     border-left: 20px;
 }
   /* The Close Button */
-  .close {
+  .close1, .close2, .close3 {
     color: white;
     float: right;
     font-size: 28px;
@@ -478,7 +477,7 @@ html{
   
   .close:hover,
   .close:focus {
-    color: white;
+    color: #CCCCCC;
     text-decoration: none;
     cursor: pointer;
   }
