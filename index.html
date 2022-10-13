@@ -17,7 +17,7 @@
           <ul>
             <li><a href="film.html">Film</a></li>
             <li><a href="#div9">Contact</a></li>
-            <li><a href="https://github.com/fujiason/fujiason.github.io">Source</a></li>
+            <li><a href="https://github.com/fujiason/fujiason.github.io">GitHub</a></li>
         </ul>
     </div>
     <div class="div1">
@@ -218,10 +218,10 @@
     // });
 
     gsap.defaults({ease: "none", duration: 2});
-    
+    gsap.set(".skills", {opacity: 1});
     const tl = gsap.timeline();
     tl.to(".title", {opacity: 0})
-    tl.from(".skills", {opacity:0, yPercent: 100})
+    tl.from(".skills", {opacity: 0, yPercent: 100})
     tl.to(".skills", {yPercent: -10, duration: 0.2})
     tl.to(".transition_mask_skills", {yPercent:-90, duration: 0.2});
 
@@ -241,6 +241,7 @@
     });
 
     const sl = gsap.timeline();
+    gsap.set(".work_transition h1", {opacity: 1});
     sl.to(".work_transition video", {scale: 2})
     sl.from(".work_transition h1", {opacity:0})
     sl.to(".transition_mask_work", {yPercent:-90});
@@ -261,6 +262,7 @@
     });
 
     const vl = gsap.timeline();
+    gsap.set(".about_transition h1", {opacity: 1});
     vl.to(".about_transition video", {scale: 2})
     vl.from(".about_transition h1", {opacity:0})
     vl.to(".transition_mask_about", {yPercent:-90});
@@ -281,6 +283,7 @@
     });
 
     const rl = gsap.timeline();
+    gsap.set(".link_transition h1", {opacity: 1});
     rl.to(".link_transition video", {scale: 2})
     rl.from(".link_transition h1", {opacity:0})
     rl.to(".transition_mask_link", {yPercent:-90});
