@@ -288,23 +288,6 @@
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
-        // gsap.to(".div1", {
-        //     duration: 8, 
-        //     scrollTrigger: {
-        //         trigger: ".div1", 
-        //         start: "top top", 
-        //         end: "-=1000", 
-        //         scrub: 4, 
-        //         pin: ".div2",
-        //         toggleActions: "restart none none none", 
-        //         markers: {
-        //             startColor: "purple", 
-        //             endColor: "fuchsia", 
-        //             fontSize: "2rem",
-        //         },
-        //     } 
-        // });
-
         gsap.defaults({ ease: "none", duration: 2 });
         gsap.set(".skills", { opacity: 1 });
         const tl = gsap.timeline();
@@ -342,11 +325,6 @@
             scrub: true,
             pin: true,
             anticipatePin: 1,
-            // markers: {
-            //     startColor: "purple", 
-            //     endColor: "fuchsia", 
-            //     fontSize: "2rem",
-            // }
         });
 
 
@@ -364,11 +342,6 @@
             scrub: true,
             pin: true,
             anticipatePin: 1,
-            // markers: {
-            //     startColor: "purple", 
-            //     endColor: "fuchsia", 
-            //     fontSize: "2rem",
-            // }
         });
 
         const rl = gsap.timeline();
@@ -385,11 +358,6 @@
             scrub: true,
             pin: true,
             anticipatePin: 1,
-            // markers: {
-            //     startColor: "purple", 
-            //     endColor: "fuchsia", 
-            //     fontSize: "2rem",
-            // }
         });
 
         const ml = gsap.timeline();
@@ -401,11 +369,6 @@
             trigger: ".more_vid",
             start: "-=450",
             end: ".more_vid",
-            markers: {
-                startColor: "purple", 
-                endColor: "fuchsia", 
-                fontSize: "2rem",
-            }
         });
 
         function trackLocation(e) {
