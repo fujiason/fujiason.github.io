@@ -18,7 +18,7 @@ html{
     from{opacity: 0;}
     to{opacity:1;}
 }
-.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .work_transition, .about_transition, .link_transition, .more_vid, .more_vids_films{
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .work_transition, .about_transition, .link_transition{
     height: 100vh;
 }
 .div10{
@@ -65,11 +65,11 @@ html{
     text-decoration: none;
 }
 
-.div1, .more_vid, .more_vids_films{
+.div1{
     justify-content: center;
     overflow: hidden;
 }
-.div1 video, .more_vid video, .more_vids_films video{
+.div1 video, .more_vid video{
     z-index: 0;
     height: 100vh;
     left: 50%;
@@ -230,7 +230,7 @@ html{
     transition: 0.3s;
     transform: scale(1.3);
 }
-.title, .more_title{
+.title, .watch_more{
     position: absolute;
     top: 30%;
     left: 0;
@@ -238,7 +238,7 @@ html{
     text-align: center;
     z-index: 1;
 }
-.title h1, .more_title h1{
+.title h1, .watch_more h1{
     font-size: 10em;
     font-weight: 500;
     color: white;
@@ -281,11 +281,18 @@ html{
     margin-left: 40px;
     text-decoration: none;
 }
-.more_vid h2, .more_films h2{
+.more_vid{
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+}
+.reels h2, .watch_films h2{
     font-size: 1.4em;
     font-weight: 400;
 }
-.more_vid h2 a, .more_films h2 a{
+.reels h2 a, .watch_films h2 a{
     padding: 5px 15px;
     border: 3px solid white;
     border-radius: 15px;
@@ -293,24 +300,7 @@ html{
     text-decoration: none;
     opacity: 0.5;
 }
-.more_vid h2 a:hover, .more_films h2 a:hover{
-    background: rgba(255, 255, 255, 0.15);
-    opacity: 1;
-    transition: 0.4s;
-}
-.reels h2{
-    font-size: 1.4em;
-    font-weight: 400;
-}
-.reels h2 a{
-    padding: 5px 15px;
-    border: 3px solid white;
-    border-radius: 15px;
-    color: white;
-    text-decoration: none;
-    opacity: 0.5;
-}
-.reels h2 a:hover{
+.reels h2 a:hover, .watch_films h2 a:hover{
     background: rgba(255, 255, 255, 0.15);
     opacity: 1;
     transition: 0.4s;

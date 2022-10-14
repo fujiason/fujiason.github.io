@@ -32,14 +32,15 @@
         <video autoplay muted loop>
             <source src="./movies/Daniel Teaser Clip 12 Rainbow Lights.mp4" type="video/mp4">
         </video>
-        <!-- <div class="title">
+        <div class="title">
             <h1>Daniel Zhang</h1>
             <div class="reels">
                 <h2>
+                    <!-- Edit YT video link -->
                     <a href="https://youtu.be/EdR7r11zenI"><i class="fa fa-youtube-play" aria-hidden="true"></i> Highlight Reel Fall 2022</a>
                 </h2>
             </div>
-        </div> -->
+        </div>
         <div class="skills">
             <div class="skill_content">
                 <h1>Director</h1>
@@ -211,30 +212,15 @@
         </p>
     </div>
 
-    <!-- <div class="more_vid">
-        <video autoplay muted loop>
-            <source src="./movies/Daniel Teaser Clip 12 Rainbow Lights.mp4" type="video/mp4">
-        </video>
-        <div class="title">
-            <h1>Daniel Zhang</h1>
-            <div class="reels">
-                <h2>
-                    <a href="films.html"><i class="fa fa-video-camera" aria-hidden="true"></i> More Films and Videography</a>
-                </h2>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="more_vids_films">
+    <div class="more_vid">
         <video autoplay muted loop>
             <source src="./movies/Daniel Teaser Clip 15 Polaroid.mp4" type="video/mp4">
         </video>
-        <div class="more_title">
+        <div class="watch_more">
             <h1>Daniel Zhang</h1>
-            <div class="more_films">
+            <div class="watch_films">
                 <h2>
-                    <a href="https://youtu.be/EdR7r11zenI"><i class="fa fa-youtube-play" aria-hidden="true"></i> Highlight Reel Fall 2022</a>
-                    <!-- <a href="films.html"><i class="fa fa-video-camera" aria-hidden="true"></i> More Films and Videography</a> -->
+                    <a href="films.html"><i class="fa fa-video-camera" aria-hidden="true"></i> More Films and Videography</a>
                 </h2>
             </div>
         </div>
@@ -313,7 +299,7 @@
         gsap.defaults({ ease: "none", duration: 2 });
         gsap.set(".skills", { opacity: 1 });
         const tl = gsap.timeline();
-        // tl.to(".title", { opacity: 0 })
+        tl.to(".title", { opacity: 0 })
         tl.from(".skills", { opacity: 0, yPercent: 100 })
         tl.to(".skills", { yPercent: -10, duration: 0.2 })
         tl.to(".transition_mask_skills", { yPercent: -90, duration: 0.2 });
@@ -382,16 +368,16 @@
             anticipatePin: 1,
         });
 
-        const ml = gsap.timeline();
-        gsap.set(".more_vid h2", { opacity: 1 });
-        ml.from(".more_vid h2", { opacity: 0, duration: 0.2 });
+        // const ml = gsap.timeline();
+        // gsap.set(".more_vid h2", { opacity: 1 });
+        // ml.from(".more_vid h2", { opacity: 0, duration: 0.2 });
 
-        ScrollTrigger.create({
-            animation: ml,
-            trigger: ".more_vid",
-            start: "-=450",
-            end: ".more_vid",
-        });
+        // ScrollTrigger.create({
+        //     animation: ml,
+        //     trigger: ".more_vid",
+        //     start: "-=450",
+        //     end: ".more_vid",
+        // });
 
         function trackLocation(e) {
             var rect = videoContainer.getBoundingClientRect(),
