@@ -22,6 +22,7 @@
         </div>
         <ul>
             <li><a href="film.html">Film and Videography</a></li>
+            <li><a href="#about_transition">About</a></li>
             <li><a href="#div9">Contact</a></li>
             <li><a href="https://www.linkedin.com/in/daniel-zhang-4bb803213/">LinkedIn</a></li>
             <li><a href="https://github.com/fujiason/fujiason.github.io">GitHub</a></li>
@@ -36,7 +37,7 @@
             <div class="reels">
                 <h2>
                     <!-- Edit YT video link -->
-                    <a href="https://youtu.be/EdR7r11zenI">Highlight Reel Fall 2022 &nbsp;<i class="fa fa-play"></i></a>
+                    <a href="https://youtu.be/EdR7r11zenI"><i class="fa fa-youtube-play" aria-hidden="true"></i> Highlight Reel Fall 2022</a>
                 </h2>
             </div>
         </div>
@@ -61,7 +62,7 @@
     <div class="transition_mask_skills"
         style="background: linear-gradient(0deg, black, black 15%, transparent); height: 5vh;"></div>
 
-    <div class="about_transition">
+    <div class="about_transition" id="about_transition">
         <video autoplay muted loop>
             <source src="./movies/Daniel Teaser Clip 18 Clash.mp4" type="video/mp4">
         </video>
@@ -197,7 +198,7 @@
         </div>
     </div>
 
-    <div style="
+    <div class="BAhover" style="
     display: flex;
     position: relative;
     justify-content: center;
@@ -211,33 +212,10 @@
         </p>
     </div>
 
-    <div style="    display: flex;
-    justify-content: center;
-    overflow: hidden;">
-        <a href="film.html">
-            <video autoplay muted loop style="padding-top: 100px;
-        margin: auto;
-        display: block;
-        position: relative;
-        z-index: 0;
-        max-height: 40vh;">
-                <source src="./movies/Daniel Teaser Clip 2 12 AM Phone Shot.mp4" type="video/mp4">
-            </video>
-        </a>
-    </div>
-
-    <div style="
-    display: flex;
-    position: relative;
-    justify-content: center;
-    overflow: hidden;
-    background-color: black;
-    background-size: cover;
-    background-attachment: cover;
-    text-align: center;">
-        <p style="color: #CCCCCC">
-            More Film/Videography (Click)
-        </p>
+    <div class="more_vid">
+        <h2>
+            <a href="films.html"><i class="fa fa-video-camera" aria-hidden="true"></i> More Films and Videography</a>
+        </h2>
     </div>
 
     <div class="link_transition">
@@ -412,6 +390,22 @@
             //     endColor: "fuchsia", 
             //     fontSize: "2rem",
             // }
+        });
+
+        const ml = gsap.timeline();
+        gsap.set(".more_vid h2", { opacity: 1 });
+        ml.from(".more_vid h2", { opacity: 0, duration: 0.2 });
+
+        ScrollTrigger.create({
+            animation: ml,
+            trigger: ".more_vid",
+            start: "-=450",
+            end: ".more_vid",
+            markers: {
+                startColor: "purple", 
+                endColor: "fuchsia", 
+                fontSize: "2rem",
+            }
         });
 
         function trackLocation(e) {

@@ -281,6 +281,30 @@ html{
     margin-left: 40px;
     text-decoration: none;
 }
+.more_vid{
+    transform: scale(2.2) translateY(50%);
+    height: 20vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.more_vid h2{
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.more_vid h2 a{
+    padding: 5px 15px;
+    border: 3px solid white;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.more_vid h2 a:hover{
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 1;
+    transition: 0.4s;
+}
 .reels h2{
     font-size: 1.4em;
     font-weight: 400;
