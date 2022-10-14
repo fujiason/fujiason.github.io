@@ -22,16 +22,49 @@ html{
     height: 100vh;
 }
 .div10{
-    background-color: white;
-    height: 35vh;
-    display: flex;
+    background-color: #111111;
+    height: 45vh;
     position: relative;
     justify-content: center;
     overflow: hidden;
     background-size: cover;
     background-attachment: cover;
     text-align: left;
+    width: 100%;
+    padding: 40px 120px;
+    justify-content: space-between;
+    align-items: center;
 }
+.div10 a{
+    position: relative;
+    max-width: 300px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.div10 a h2{
+    color: white;
+    font-size: 1.3rem;
+}
+.div10 ul{
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+}
+.div10 ul li{
+    list-style: none;
+}
+.div10 ul li a{
+    display: inline-block;
+    color: #999999;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
 .div1{
     justify-content: center;
     overflow: hidden;
@@ -96,24 +129,28 @@ html{
     text-align: left;
 }
 .div3 div, .div4 div, .div5 div{
-    max-width: 1200px;
+    max-width: 500px;
 }
-.div3 div div h1, .div4 div div h1, .div5 div div h1{
+.div3 div h1, .div4 div h1, .div5 div h1{
     color: white;
     font-size: 1.8rem;
+    transform: translateX(-50%);
 }
-.div3 div div p, .div4 div div p, .div5 div div p{
+.div3 div p, .div4 div p, .div5 div p{
     color: #CCCCCC;
     font-size: 1.4rem;
     font-weight: 500;
+    transform: translateX(-50%);
 }
-.div3 div video, .div4 div video, .div5 div video{
+.div3 video, .div4 video, .div5 video{
     z-index: 0;
     height: auto;
     margin-top: 40px;
     position: absolute;
     text-align: center;
-    max-width: 1200px;
+    max-width: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .div6, .div7{
     padding-top: 80px;
@@ -158,7 +195,7 @@ html{
 .div6 div img, .div7 div img{
     object-fit: cover;
     width: 500px;
-    height: 500px;
+    height: 600px;
 }
 .contact div img{
     object-fit: cover;
