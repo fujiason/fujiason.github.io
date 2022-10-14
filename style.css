@@ -129,18 +129,18 @@ html{
     text-align: left;
 }
 .div3 div, .div4 div, .div5 div{
-    max-width: 500px;
+    max-width: 750px;
 }
 .div3 div h1, .div4 div h1, .div5 div h1{
     color: white;
     font-size: 1.8rem;
-    transform: translateX(-50%);
+    transform: translateX(-17%);
 }
 .div3 div p, .div4 div p, .div5 div p{
     color: #CCCCCC;
     font-size: 1.4rem;
     font-weight: 500;
-    transform: translateX(-50%);
+    transform: translateX(-17%);
 }
 .div3 video, .div4 video, .div5 video{
     z-index: 0;
@@ -191,6 +191,9 @@ html{
     font-weight: 500;
     max-width: 30em;
     color: #CCCCCC;
+}
+.div7 div img{
+    object-position: 33% 0%;
 }
 .div6 div img, .div7 div img{
     object-fit: cover;
