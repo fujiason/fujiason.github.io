@@ -490,11 +490,13 @@ html{
     border-left: 20px;
 }
   /* The Close Button */
-  .close1, .close2, .close3 {
+  .close {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    transform: scale(1.5);
+    margin-right: 10px;
   }
   
   .close:hover,
