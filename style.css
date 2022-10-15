@@ -316,7 +316,7 @@ html{
 .more_vid video{
     margin: auto;
     display: block;
-    position: relative;
+    position: absolute;
     z-index: 0;
     max-height: 100vh;
     left: 50%;
