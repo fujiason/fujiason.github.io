@@ -185,8 +185,11 @@ html{
     flex-direction: row;
     display: grid;
 }
-.div9 div h1{
+.contact div h1{
+    text-align: left;
     padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     font-size: 4rem;
     font-weight: 500;
     max-width: 30em;
@@ -203,7 +206,7 @@ html{
 .contact div img{
     object-fit: cover;
     width: 500px;
-    height: 500px;
+    height: 650px;
 }
 .div6 div p, .div7 div p, .contact div p{
     text-align: left;
@@ -220,10 +223,9 @@ html{
 .socials a img{
     padding-left: 30px;
     padding-right: 70px;
-    padding-top: 20px;
     align-items: center;
     filter: invert(1);
-    max-height: 90px;
+    max-height: 70px;
     width: auto;
 }
 .socials a img:hover{

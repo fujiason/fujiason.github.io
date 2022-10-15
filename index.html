@@ -235,13 +235,11 @@
         style="background: linear-gradient(0deg, black, black 15%, transparent); height: 30vh;"></div>
 
     <div class="div9" id="div9">
-        <div>
-            <h1>
-                Contact
-            </h1>
-        </div>
         <div class="contact">
             <div>
+                <h1>
+                    Contact
+                </h1>
                 <p>
                     For questions or bookings, please email danielsimonzhang@gmail.com or text<br> 630-632-8616 with
                     your name and event/shoot details. Otherwise, follow Daniel's work on YouTube, Instagram, Tiktok,
@@ -300,7 +298,7 @@
         const tl = gsap.timeline();
         tl.to(".title", { opacity: 0 })
         tl.from(".skills", { opacity: 0, yPercent: 100 })
-        tl.to(".skills", { yPercent: -10, duration: 0.2 })
+        tl.to(".skills", { yPercent: -100})
         tl.to(".transition_mask_skills", { yPercent: -90, duration: 0.2 });
 
         ScrollTrigger.create({
