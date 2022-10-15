@@ -1,3 +1,3 @@
 # Website Portfolio Project
-## Project created and written by **Jason Fu**
-## This project is intended to be used by **Daniel Zhang** at [dazhangniel.com](https://www.dazhangniel.com). 
+## Project created and written by __Jason Fu__
+## This project is intended to be used by __Daniel Zhang__ at [dazhangniel.com](https://www.dazhangniel.com). 
