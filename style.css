@@ -186,7 +186,7 @@ html{
     display: grid;
 }
 .div9 div h1{
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     font-size: 4rem;
     font-weight: 500;
     max-width: 30em;
@@ -218,7 +218,7 @@ html{
     display: flex;
 }
 .socials a img{
-    padding-left: 70px;
+    padding-left: 30px;
     padding-right: 70px;
     padding-top: 20px;
     align-items: center;
