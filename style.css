@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt:200,300,400,500,600,700,800,900&display=swap');
-/* film description align with mov, scrub mov, more content for each of the films on index.html, VFX warping problem and size*/
 *{
     margin: 0;
     padding: 0;
@@ -20,18 +19,6 @@ html{
 }
 .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .work_transition, .about_transition, .link_transition{
     height: 100vh;
-}
-.div11{
-    height: 20vh;
-    text-align: center;
-    position: relative;
-    align-items: center;
-    transform: translateY(76%);
-    justify-content: center;
-}
-.div11 h1{
-    color: white;
-    font-size: 2rem;
 }
 .div10{
     background-color: #111111;
@@ -140,7 +127,32 @@ html{
     background-attachment: cover;
     text-align: left;
 }
-.div3 div, .div4 div, .div5 div{
+.div11{
+    height: 30vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: left;
+}
+.div11 div{
+    transform: translateY(70%);
+}
+.div11 div h1{
+    color: white;
+    font-size: 1.8rem;
+    transform: translateX(-51%);
+}
+.div11 div p{
+    color: #CCCCCC;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transform: translateX(-51%);
+}
+.div3 div, .div4 div, .div5 div, .div11 div{
     max-width: 750px;
 }
 .div3 div h1, .div4 div h1, .div5 div h1{
@@ -470,14 +482,25 @@ html{
     background-attachment: fixed;
     background-position: 100% 20%;
 }
-#video-compare-container, #video-compare-container1 {
+#video-compare-container{
     margin-top: 70px;
     align-items: center;
     display: inline-block;
     line-height: 0;
     position: relative;
-    width: 89%;
-    height: 89%;
+    width: 75%;
+    height: 42%;
+    padding-top: 42.3%;
+    z-index: 0;
+}
+#video-compare-container1 {
+    margin-top: 70px;
+    align-items: center;
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+    width: 90%;
+    height: 22%;
     padding-top: 42.3%;
     z-index: 0;
 }
