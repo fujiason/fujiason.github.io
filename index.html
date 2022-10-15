@@ -189,11 +189,39 @@
         </div>
     </div>
 
+    <div class="div11">
+        <h1>VFX Shots</h1>
+    </div>
+
     <div class="div8">
         <div id="video-compare-container">
             <img src="./vfx/Edward Firebending VFX 1 Before.jpg">
             <div id="video-clipper">
                 <img src="./vfx/Edward Firebending VFX 1 After.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="BAhover" style="
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: center;
+    padding-bottom: 100px;">
+        <p style="color: #CCCCCC">
+            Before and After (Hover)
+        </p>
+    </div>
+
+    <div class="div8">
+        <div id="video-compare-container1">
+            <img src="./vfx/Jeremy Lightning VFX 3 Before.jpg">
+            <div id="video-clipper1">
+                <img src="./vfx/Jeremy Lightning VFX 3 After.jpg">
             </div>
         </div>
     </div>
@@ -380,6 +408,22 @@
         videoContainer.addEventListener("mousemove", trackLocation, false);
         videoContainer.addEventListener("touchstart", trackLocation, false);
         videoContainer.addEventListener("touchmove", trackLocation, false);
+
+        function trackLocation1(e) {
+            var rect1 = videoContainer1.getBoundingClientRect(),
+                position1 = ((e.pageX - rect1.left) / videoContainer1.offsetWidth) * 100;
+            if (position1 <= 100) {
+                videoClipper1.style.width = position1 + "%";
+                clippedVideo1.style.width = ((100 / position1) * 100) + "%";
+                clippedVideo1.style.zIndex = 3;
+            }
+        }
+        var videoContainer1 = document.getElementById("video-compare-container1"),
+            videoClipper1 = document.getElementById("video-clipper1"),
+            clippedVideo1 = videoClipper1.getElementsByTagName("img")[0];
+        videoContainer1.addEventListener("mousemove", trackLocation1, false);
+        videoContainer1.addEventListener("touchstart", trackLocation1, false);
+        videoContainer1.addEventListener("touchmove", trackLocation1, false);
 
     </script>
 </body>

@@ -21,6 +21,18 @@ html{
 .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .work_transition, .about_transition, .link_transition{
     height: 100vh;
 }
+.div11{
+    height: 20vh;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    transform: translateY(76%);
+    justify-content: center;
+}
+.div11 h1{
+    color: white;
+    font-size: 2rem;
+}
 .div10{
     background-color: #111111;
     height: 45vh;
@@ -458,7 +470,7 @@ html{
     background-attachment: fixed;
     background-position: 100% 20%;
 }
-#video-compare-container {
+#video-compare-container, #video-compare-container1 {
     margin-top: 70px;
     align-items: center;
     display: inline-block;
@@ -469,20 +481,20 @@ html{
     padding-top: 42.3%;
     z-index: 0;
 }
-#video-compare-container > img {
+#video-compare-container > img, #video-compare-container1 > img {
     width: 100%;
     position: absolute;
     top: 0; 
     height: 100%;
 }
-#video-clipper {
+#video-clipper, #video-clipper1 {
     width: 50%; 
     position: absolute;
     top: 0; 
     bottom: 0;
     overflow: hidden;
 }
-#video-clipper img {
+#video-clipper img, #video-clipper1 img {
     width: 200%;
     position: absolute;
     height: 100%;
